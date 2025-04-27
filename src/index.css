@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  /* Borders */
+  --color-grey-border: #e2e8f0;
+
+  /* Colors */
+  --color-blue-100: #4299e1;
+  --color-dark-100: #2d3748;
+  --color-green-100: #48bb78;
+  --color-grey-100: #a0aec0;
+  --color-grey-200: #f8f9fa;
+  --color-grey-300: #718096;
+  --color-orange-100: #f6ad55;
+  --color-red-100: #e53e3e;
+  --color-teal-100: #4fd1c5;
+
+  /* Font */
+  --font-primary: "Helvetica", "Arial", "san-serif";
+
+  /* Shadow */
+  --shadow-container: 0 7px 23px rgba(0, 0, 0, 0.05);
+  --shadow-nav: 0px 7px 23px 0px #0000000d;
+  --shadow-active: 0px 3.5px 5.5px 0px #00000005;
+}
+
+body {
+  @apply font-primary;
+}
+
+/* Gradient */
+.dark-gradient {
+  background: linear-gradient(81.62deg, #313860 2.25%, #151928 79.87%);
+}
+
+.light-gradient {
+  background: linear-gradient(
+    112.83deg,
+    rgba(255, 255, 255, 0.82) 0%,
+    rgba(255, 255, 255, 0.8) 110.84%
+  );
+}
+
+.line-gradient {
+  background: linear-gradient(
+    90deg,
+    rgba(224, 225, 226, 0) 0%,
+    #e0e1e2 49.52%,
+    rgba(224, 225, 226, 0.15625) 99.04%
+  );
+}
+
+/* Scrollbar */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
